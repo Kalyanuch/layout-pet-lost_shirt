@@ -17,6 +17,10 @@ html, body {
     height: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font: 1em / 1.42rem "Roboto", Arial, sans-serif;
     color: #212121;
@@ -132,6 +136,10 @@ ul {
 /* ------ Hero stop ------ */
 
 /* ------ Product start ------ */
+.products {
+    margin-bottom: 160px;
+}
+
 .filter {
     display: flex;
     align-items: center;
@@ -272,3 +280,73 @@ ul {
     color: var(--black);
 }
 /* ------ Product stop ------ */
+
+/* ------ Collections start ------ */
+.collections {
+    margin-bottom: 135px;
+}
+
+.collections__list {
+    display: flex;
+}
+
+.collections__item {
+    min-height: 474px;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 30px;
+    background: url("../image/pattern.png") center center / 500px;
+    position: relative;
+}
+
+.collections__item:last-child {
+    margin-right: 0;
+}
+
+.collections__item:hover .btn {
+    background: var(--red);
+    color: #FFF;
+}
+
+.collections__item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 175%;
+    width: 60%;
+    top: -20%;
+    left: -18%;
+    background: center center / contain no-repeat;
+}
+
+.collections__item_type_guys:before {
+    background-image: url("../image/collection_man.png");
+}
+
+.collections__item_type_girls:before {
+    background-image: url("../image/collection_woman.png");
+    width: 80%;
+    left: -20%;
+}
+
+.collections__link {
+    display: block;
+    padding: 75px 13% 75px 44%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    position: relative;
+    height: 100%;
+}
+
+.collections__title {
+    font: bold 70px/1em var(--titlesFont);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.collections__desc {
+    margin-bottom: 28px;
+}
+/* ------ Collections stop ------ */
