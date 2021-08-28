@@ -350,3 +350,59 @@ ul {
     margin-bottom: 28px;
 }
 /* ------ Collections stop ------ */
+
+/* ------ Footer start ------ */
+.footer {
+    margin-bottom: 115px;
+}
+
+.footer__container {
+    padding: 0 7%;
+}
+
+.site__menu__sections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site__menu_col {
+    margin-right: 20px;
+}
+
+.site__menu_col:last-child {
+    margin-right: 0;
+}
+
+.site__menu_title {
+    font: bold 24px/1em var(--titlesFont);
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.site__menu_item {
+    margin-bottom: 15px;
+}
+
+.site__menu_link {
+    color: #737373;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site__menu_link:hover {
+    color: var(--red);
+}
+
+.site__menu_text {
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.site__menu_text_row {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+/* ------ Footer stop ------ */
