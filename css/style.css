@@ -19,6 +19,7 @@ html, body {
 
 * {
     box-sizing: border-box;
+    transition: all .3s ease;
 }
 
 body {
@@ -404,5 +405,81 @@ ul {
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
+}
+
+.extras {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    margin: 120px 0 90px 0;
+}
+
+.extras__col {
+    width: calc(50% - 20px);
+}
+
+.extras__best {
+    text-decoration: none;
+    background-color: var(--black);
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 50px 10px;
+    font: bold 50px/1em var(--titlesFont);
+    text-transform: uppercase;
+}
+
+.extras__best:hover {
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.extras__col_socials {
+    background-color: var(--yellow);
+    min-height: 100%;
+    height: 100%;
+    background: url("../image/pattern.png") center center / contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: 50px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: block;
+    width: 39px;
+    height: 39px;
+    transition: all 70ms ease;
+}
+
+.link__facebook {
+    background: url('../image/social_fb.png') 0 0 no-repeat;
+}
+
+.link__twitter {
+    background: url('../image/social_twitter.png') 0 0 no-repeat;
+}
+
+.link__insta {
+    background: url('../image/social_instagram.png') 0 0 no-repeat;
+}
+
+.link__pinterest {
+    background: url('../image/social_pinterest.png') 0 0 no-repeat;
+}
+
+.socials__link:hover {
+    background-position: 0 -39px;
 }
 /* ------ Footer stop ------ */
