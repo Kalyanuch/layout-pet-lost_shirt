@@ -162,7 +162,7 @@ ul {
 .sidebar__menu__link:hover {
     color: var(--red);
 }
-
+/*
 .sidebar__hamburger {
     position: absolute;
     top: 30px;
@@ -183,6 +183,39 @@ ul {
     width: 20px;
     height: 20px;
     margin: 0 auto;
+}
+
+.sidebar__hamburger_link span {
+    display: block;
+    background: var(--yellow);
+    width: 100%;
+    height: 2px;
+}
+
+.sidebar__hamburger_link:hover span {
+    background: var(--red);
+}
+*/
+
+.sidebar__hamburger {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translateX(-50%);
+}
+
+.sidebar__opened .sidebar__hamburger {
+    display: none;
+}
+
+.sidebar__hamburger_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
 
 .sidebar__hamburger_link span {
