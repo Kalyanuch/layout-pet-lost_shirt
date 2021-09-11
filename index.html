@@ -95,23 +95,23 @@
             <div class="container">
                 <ul class="filter">
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Популярное</a>
+                        <a href="#" data-filter="popular" class="filter__link">Популярное</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Новинки</a>
+                        <a href="#" data-filter="latest" class="filter__link">Новинки</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Бестселлеры</a>
+                        <a href="#" data-filter="bestseller" class="filter__link">Бестселлеры</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Специальные предложения</a>
+                        <a href="#" data-filter="special" class="filter__link">Специальные предложения</a>
                     </li>
                     <li class="filter__item">
-                        <a href="#" class="filter__link">Скоро в продаже</a>
+                        <a href="#" data-filter="soon" class="filter__link">Скоро в продаже</a>
                     </li>
                 </ul>
                 <ul class="products__list">
-                    <li class="products__item">
+                    <li class="products__item latest bestseller">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item special popular latest">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -139,7 +139,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item products__item_color_black products__item_size_double">
+                    <li class="products__item products__item_color_black products__item_size_double soon latest">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item products__item_color_black products__item_size_double">
+                    <li class="products__item products__item_color_black products__item_size_double special bestseller latest">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item latest special">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -181,7 +181,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="products__item">
+                    <li class="products__item popular latest">
                         <div class="products__price">
                             <div class="products__price_amount">1 800</div>
                         </div>
@@ -324,6 +324,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/filter.js"></script>
